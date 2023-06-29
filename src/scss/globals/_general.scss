@@ -1,0 +1,68 @@
+@use "variables" as *;
+
+html {
+ box-sizing: border-box;
+ font-size: 100%;
+ scroll-behavior: smooth;
+ scroll-margin-block: 1rem;
+}
+*,
+*::after,
+*::before {
+ box-sizing: inherit;
+}
+body {
+ margin: 0;
+ padding: 0;
+ font-family: "Space Grotesk", sans-serif;
+ font-size: $fs-text;
+ line-height: 1.5;
+ color: $text-color;
+}
+body,
+input,
+textarea,
+button {
+ font-family: "Space Grotesk", sans-serif;
+}
+ul,
+ol {
+ @include list-reset;
+}
+img {
+ max-width: 100%;
+ height: auto;
+}
+a,
+a:active,
+a:visited {
+ text-decoration: none;
+}
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+ outline: 2px dashed $accent;
+ outline-offset: 3px;
+}
+input:invalid,
+textarea:invalid {
+ outline-color: $invalid;
+}
+.visually-hidden {
+ position: absolute;
+ left: -10000px;
+ top: auto;
+ width: 1px;
+ height: 1px;
+ overflow: hidden;
+}
+.no-scroll {
+ overflow: hidden;
+}
+.wrapper {
+ margin: 0 auto;
+ width: calc(100% - 1.25rem); 
+ max-width: $wrapper;
+ overflow-x: hidden;
+}

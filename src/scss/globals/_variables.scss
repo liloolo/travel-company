@@ -1,0 +1,27 @@
+// containers
+$wrapper: 1200px; //1200px
+$tablet-width: 760px; //40rem
+$mobile-width: 420px; //26,2rem;;
+
+//font sizes
+$fs-h1: 3rem; //48px
+$fs-h2: 2.5rem; //40px
+$fs-h3: 2rem; //32px
+$fs-text: 1.2rem; // 19px
+
+//colors
+$text-color: #45343a; //brown
+$accent: #90b4e4; //blue
+$invalid: #e49690; //red
+$bg-color: #dde4ef; // light-grey
+
+//another
+$border-radius: 2em;
+$transition: all 250ms ease-in-out;
+$scale: scale(1.1);
+
+@mixin list-reset {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
